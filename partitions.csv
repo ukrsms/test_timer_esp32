@@ -1,0 +1,11 @@
+# Espressif ESP32 Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0xd000,16K,
+otadata,data,ota,0x11000,8K,
+phy_init,data,phy,0x13000,4K,
+ota_0,app,ota_0,0x20000,0x1A0000,
+ota_1,app,ota_1,,0x1A0000,
+settings,data,nvs,,0x04000,
+factorydata,data,nvs,,0x02000,
+logger,data,0x90,,0x0C000,
+coredump, data, coredump,,64k
